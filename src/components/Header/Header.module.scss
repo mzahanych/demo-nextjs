@@ -1,0 +1,67 @@
+.head {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 11px 0;
+  background-color: #fff;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: lowercase;
+}
+
+.logotype {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  margin: 0 10px 0 0;
+  img {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+  }
+}
+
+.topBorderInd {
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    #e90a0a 0,
+    #e90a0a 27%,
+    #26221e 27%,
+    #26221e 32%,
+    #ff8600 32%,
+    #ff8600 57%,
+    #ae0000 57%,
+    #ae0000 73%,
+    #0065b1 73%,
+    #0065b1 77%,
+    #008f20 77%,
+    #008f20 100%
+  );
+}
+
+.topBorderPriv {
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    #36302f 0,
+    #36302f 27%,
+    #ae0000 27%,
+    #ae0000 32%,
+    #c29d67 32%,
+    #c29d67 57%,
+    #645237 57%,
+    #645237 73%,
+    #183d4d 73%,
+    #183d4d 77%,
+    #26221e 77%,
+    #26221e 100%
+  );
+}

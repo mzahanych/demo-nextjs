@@ -1,0 +1,45 @@
+.mainMenuItem {
+  height: 50px;
+  margin: 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0%;
+    background: #ae0000;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover {
+    &::after {
+      width: 60%;
+    }
+  }
+}
+
+.mainMenuItemActive {
+  height: 50px;
+  margin: 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+  font-weight: bold;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 60%;
+    background: #ae0000;
+  }
+}

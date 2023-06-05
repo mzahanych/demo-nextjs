@@ -1,0 +1,145 @@
+#topBanner {
+  max-width: 1310px;
+  margin: auto;
+  section {
+    margin: 0 auto 13px 0;
+    position: relative;
+    height: auto;
+    max-width: 1310px;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}
+
+.slides {
+  height: 350px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.5;
+  li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 350px;
+  }
+}
+
+.slide {
+  background-color: #26221e;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+
+  .col {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .colLeft {
+    padding-left: 91px;
+    padding-right: 12px;
+    flex-wrap: wrap;
+  }
+
+  .colRight {
+    position: relative;
+    padding-right: 91px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: right;
+    img {
+      max-width: 260px;
+      max-height: 260px;
+    }
+  }
+
+  .inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 100%;
+    height: 50%;
+    padding: 0;
+    background: transparent;
+
+    &:nth-child(2) {
+      justify-content: flex-start;
+    }
+
+    .heading {
+      color: #fff;
+      font-size: 40px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+    }
+
+    .subheading {
+      color: #fff;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+      line-height: 1.17;
+    }
+    .cta {
+      margin-top: 32px;
+      padding: 13.12px 22.4px 13.44px;
+    }
+  }
+}
+
+#main {
+  .placeholder {
+    height: 36px;
+    margin-bottom: 8px;
+  }
+
+  .infoboxGrid {
+    position: relative;
+    transition: all 0.55s ease-in;
+    width: 100%;
+    color: #4e4e4e;
+    .container {
+      padding: 5px 12px 40px 12px;
+      max-width: 1176px;
+      margin: 0 auto;
+      display: flex;
+      box-sizing: border-box;
+    }
+  }
+
+  .lifting {
+    transition: all .55s ease-in;
+    background-color: #fff;
+    margin: 0 auto 8px auto;
+    max-width: 1310px;
+    .liftingInner {
+      padding: 0 12px 30px 12px;
+      .headline {
+        max-width: 1128px;
+        margin: 10px auto;
+        padding: 0 0 4px 0;
+        text-align: left;
+        h2 {
+          margin: 0;
+          line-height: 1.17;
+          font-weight: 590;
+          font-size: 24px;
+          color: #201c17;
+        }
+      }
+    }
+  }
+}

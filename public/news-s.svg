@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="SVGRoot" width="47.42" height="47.439" version="1.1" viewBox="0 0 47.42 47.439">
+ <g fill="none" stroke="#000000" stroke-linecap="round">
+  <path d="m46.42 9.2709v26.943c-0.0079 5.763-3.2974 10.204-7.3374 10.225h-30.005c-4.0459 0-8.0691-2.8244-8.077-7.7732v-32.052l0.00294-5.5946h37.621l3.9576-0.018795-0.11631 37.993" stroke-linejoin="round" stroke-width="2"/>
+  <g>
+   <path d="m27.761 14.162h9.4278"/>
+   <path d="m27.761 20.644h9.4278"/>
+   <path d="m5.7836 33.609h31.405"/>
+   <path d="m27.761 27.127h9.4278"/>
+   <path d="m9.4177 40.092h27.771"/>
+   <path d="m5.7836 7.679h31.405"/>
+  </g>
+  <path d="m23.143 14.162h-17.367v12.83h17.575z" stroke-linejoin="round" stroke-width="1px"/>
+ </g>
+</svg>

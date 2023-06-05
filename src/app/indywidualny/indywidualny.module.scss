@@ -1,0 +1,129 @@
+.mainBanner {
+  margin: 8px 0 12px 0;
+  background: #f5f5f5;
+}
+
+.mainBannerContent {
+  margin: 0 auto;
+  padding: 0 12px;
+  max-width: 1176px;
+  box-sizing: border-box;
+}
+
+.row {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 0 12px;
+}
+
+.textBox {
+  align-self: center;
+  width: auto;
+  flex-basis: calc(50% - 1rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 39px 0 16px 0;
+  text-align: left;
+  box-sizing: border-box;
+  .text {
+    margin: 12px 0;
+    padding: 0;
+    list-style: none;
+    color: #201c17;
+    line-height: 1.5;
+    li {
+      padding: 0;
+      margin: 3px 0;
+      position: relative;
+    }
+    ul {
+      margin: 8.8px 0;
+      padding: 0 0 0 20px;
+      list-style: none;
+      li {
+        margin: 3.3px 0;
+        padding-bottom: 2px;
+        position: relative;
+        &::before {
+          background: #ae0000;
+          position: absolute;
+          left: -1.2em;
+          top: 0.617em;
+          display: inline-block;
+          width: 4.793px;
+          height: 4.793px;
+          vertical-align: middle;
+          content: '';
+        }
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    .buttonRed {
+      padding: 13.120px 22.400px 13.440px;
+      background: #ae0000;
+      color: #fff;
+      display: inline-block;
+      border-radius: 50px;
+      vertical-align: bottom;
+      text-transform: lowercase;
+      text-align: center;
+      white-space: nowrap;
+      transition: background 0.3s;
+      line-height: 1.1;
+      &:hover {
+        background: #850000;
+      }
+    }
+    .link {
+      color: #ae0000;
+      text-transform: lowercase;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
+
+.imageBox {
+  align-self: center;
+  padding: 0 0 0 74px;
+  width: auto;
+  height: auto;
+  flex-basis: calc(50% - 1rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 12px 0 16px 0;
+    display: block;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+}
+
+.legalNote {
+  position: absolute;
+  z-index: 12;
+  bottom: 12px;
+  right: 0;
+  .legalNoteLabel {
+    padding: 5px;
+    color: #767676;
+    font-size: 12px;
+    text-transform: lowercase;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
