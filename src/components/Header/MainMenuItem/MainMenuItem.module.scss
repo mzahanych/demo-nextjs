@@ -7,6 +7,11 @@
   font-size: 14px;
   position: relative;
 
+  @media (max-width: 1080px) {
+    font-size: 12px;
+    padding: 0 0.2em;
+  }
+
   &::after {
     content: '';
     position: absolute;

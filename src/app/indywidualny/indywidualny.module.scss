@@ -17,6 +17,10 @@
   width: 100%;
   margin-bottom: 6px;
   padding: 0 12px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 
 .textBox {
@@ -78,6 +82,11 @@
       &:hover {
         background: #850000;
       }
+
+      @media (max-width: 1080px) {
+        font-size: 14px;
+        padding: 9px 22.400px;
+      }
     }
     .link {
       color: #ae0000;
@@ -100,6 +109,11 @@
   display: inline-block;
   text-align: center;
 
+  @media (max-width: 650px) {
+    align-self: unset;
+    padding: 0;
+  }
+
   img {
     max-width: 100%;
     width: auto;
@@ -109,6 +123,10 @@
     padding: 0;
     border: 0;
     outline: 0;
+    @media (max-width: 650px) {
+      max-height: 216px;
+      margin: 6px auto;
+    }
   }
 }
 
@@ -117,6 +135,9 @@
   z-index: 12;
   bottom: 12px;
   right: 0;
+  @media (max-width: 650px) {
+    left: 0;
+  }
   .legalNoteLabel {
     padding: 5px;
     color: #767676;

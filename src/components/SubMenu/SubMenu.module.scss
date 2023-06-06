@@ -5,11 +5,22 @@
   padding: 0;
   list-style: none;
   text-transform: lowercase;
+  @media (max-width: 980px) {
+    padding-left: 12px;
+  }
+
+  @media (max-width: 920px) {
+    display: none;
+  }
 }
 
 .submenuItem {
   padding: 0 16px;
   margin: 0;
+
+  @media (max-width: 980px) {
+    padding: 0 4px;
+  }
 }
 
 .submenuLink {
@@ -18,6 +29,10 @@
   line-height: 1;
   padding: 14px 0 16px;
   color: #201c17;
+
+  @media (max-width: 980px) {
+    font-size: 14px;
+  }
 
   &::after {
     content: '';

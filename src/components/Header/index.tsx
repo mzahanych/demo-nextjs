@@ -35,7 +35,11 @@ export default function Header() {
               alt="main logo"
             />
           </Link>
-
+          <div className={styles.burgerMenuIconWrapper}>
+            <div className={styles.burgerMenuIcon} />
+            <div className={styles.burgerMenuIcon} />
+            <div className={styles.burgerMenuIcon} />
+          </div>
           <ul
             className={styles.menu}
             data-event="click"
