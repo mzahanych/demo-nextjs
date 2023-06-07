@@ -6,7 +6,10 @@
   list-style: none;
   text-transform: lowercase;
   font-size: 0.4em;
-
+  @media (max-width: 480px) {
+    width: 100%;
+    justify-content: space-around;
+  }
   li {
     position: relative;
     padding: 0;
@@ -98,5 +101,11 @@
 
   @media (max-width: 1080px) {
     font-size: 14px;
+  }
+}
+
+.hideOnMobile {
+  @media (max-width: 480px) {
+    display: none !important;
   }
 }

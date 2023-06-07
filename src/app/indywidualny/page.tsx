@@ -37,7 +37,7 @@ export default function Indywidualny() {
             <div className={styles.textBox}>
               <ul className={styles.text}>
                 <li>
-                  <p>&nbsp;</p>
+                  <p className={styles.hideOnMobile}>&nbsp;</p>
                   <p>
                     <strong>
                       <span style={{ fontSize: 40 }}>

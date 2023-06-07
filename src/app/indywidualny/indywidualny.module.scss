@@ -32,6 +32,15 @@
   margin: 39px 0 16px 0;
   text-align: left;
   box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 650px) {
+    order: 2;
+  }
+
   .text {
     margin: 12px 0;
     padding: 0;
@@ -68,7 +77,7 @@
       }
     }
     .buttonRed {
-      padding: 13.120px 22.400px 13.440px;
+      padding: 13.12px 22.4px 13.44px;
       background: #ae0000;
       color: #fff;
       display: inline-block;
@@ -85,7 +94,10 @@
 
       @media (max-width: 1080px) {
         font-size: 14px;
-        padding: 9px 22.400px;
+        padding: 9px 22.4px;
+      }
+      @media (max-width: 650px) {
+        width: 100%;
       }
     }
     .link {
@@ -112,6 +124,9 @@
   @media (max-width: 650px) {
     align-self: unset;
     padding: 0;
+  }
+  @media (max-width: 480px) {
+    order: 1;
   }
 
   img {
@@ -146,5 +161,11 @@
     white-space: nowrap;
     cursor: pointer;
     font-weight: 500;
+  }
+}
+
+.hideOnMobile {
+  @media (max-width: 480px) {
+    display: none !important;
   }
 }

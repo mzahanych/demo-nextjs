@@ -255,7 +255,7 @@ export default function Footer() {
             </strong>
           </p>
           <p>&nbsp;</p>
-          <table style={{ width: '100%' }}>
+          <table>
             <tbody>
               {/* First part */}
               <tr>

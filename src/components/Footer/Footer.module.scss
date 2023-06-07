@@ -21,6 +21,12 @@
     padding: 0 12px;
   }
 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
   p {
     line-height: 1.5;
   }
@@ -52,6 +58,10 @@
         transition: transform .4s;
         content: '';
       }
+    }
+
+    @media (max-width: 480px) {
+      width: 95%;
     }
 
     ul {
@@ -125,6 +135,9 @@
       width: 100%;
       display: block;
       padding-bottom: 20px;
+    }
+    @media (max-width: 480px) {
+      width: 95%;
     }
   }
 

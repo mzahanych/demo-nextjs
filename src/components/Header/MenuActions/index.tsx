@@ -41,7 +41,7 @@ export default function MenuActions({ isPrivateBanking }: MenuActionsProps) {
         </Link>
       </li>
       <li>
-        <Link href="#" className="buttonRed">
+        <Link href="#" className={`buttonRed ${styles.hideOnMobile}`}>
           {isPrivateBanking ? 'Zamów rozmowę' : 'Załóż konto osobiste'}
         </Link>
       </li>
