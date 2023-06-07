@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="306">
+  <defs>
+    <g id="chevron">
+      <path stroke-width="5" stroke-linecap="round" stroke-linejoin="miter" d="M 3 3 L 25 25"/>
+	  <path stroke-width="5" stroke-linecap="round" stroke-linejoin="miter" d="M 27 25 L 50 3"/>
+    </g>
+  </defs>
+  <use x="0" y="0" style="stroke:#ae0000" xlink:href="#chevron"/><!-- ind -->
+  <use x="0" y="34" style="stroke:#ae0000" xlink:href="#chevron"/><!-- priv -->
+  <use x="0" y="68" style="stroke:#00801f" xlink:href="#chevron"/><!-- biz -->
+  <use x="0" y="102" style="stroke:#0074ad" xlink:href="#chevron"/><!-- corpo -->
+  <use x="0" y="136" style="stroke:#d60093" xlink:href="#chevron"/><!-- em -->
+  <use x="0" y="170" style="stroke:#ae0000" xlink:href="#chevron"/><!-- premium -->
+  <use x="0" y="204" style="stroke:#8e8e8e" xlink:href="#chevron"/><!-- gray -->
+  <use x="0" y="238" style="stroke:#030303" xlink:href="#chevron"/><!-- black -->
+  <use x="0" y="272" style="stroke:#fff" xlink:href="#chevron"/><!-- white -->
+</svg>

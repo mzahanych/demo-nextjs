@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './Footer.module.scss'
 import DodatkowyProduktBlack from '../../../public/dodatkowy-produkt-black-s.svg'
 import informacje from '../../../public/informacje-s.svg'
@@ -7,9 +9,11 @@ import inwestycje from '../../../public/inwestycje-s.svg'
 import dokument from '../../../public/dokument-zbierz-dokumenty-footer.svg'
 import footer24 from '../../../public/24-footer.png'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const footerFirst = [
   {
+    id: 741,
     name: 'Kontakt z mbankiem',
     links: [
       {
@@ -42,6 +46,7 @@ const footerFirst = [
     ],
   },
   {
+    id: 742,
     name: 'Pomoc',
     links: [
       {
@@ -72,6 +77,7 @@ const footerFirst = [
     ],
   },
   {
+    id: 743,
     name: 'Bezpieczeństwo i prawo',
     links: [
       {
@@ -107,6 +113,7 @@ const footerFirst = [
 
 const footerSecond = [
   {
+    id: 744,
     name: 'o nas',
     links: [
       { id: 70, label: 'O mBanku', url: '/o-nas/o-mbanku/' },
@@ -137,6 +144,7 @@ const footerSecond = [
     ],
   },
   {
+    id: 745,
     name: 'Przydatne linki',
     links: [
       {
@@ -174,6 +182,7 @@ const footerSecond = [
     ],
   },
   {
+    id: 746,
     name: 'Produkty',
     links: [
       {
@@ -216,6 +225,14 @@ const footerSecond = [
 ]
 
 export default function Footer() {
+  const [dropdown, setDropdown] = useState<number | null>(null)
+
+  const clickHandler = (index: number) => {
+    setDropdown((prev) => {
+      return prev === index ? null : index
+    })
+  }
+
   return (
     <footer className={styles.pageFooter}>
       <div className={styles.wrapper}>
@@ -238,14 +255,24 @@ export default function Footer() {
             </strong>
           </p>
           <p>&nbsp;</p>
-          <table>
+          <table style={{ width: '100%' }}>
             <tbody>
               {/* First part */}
               <tr>
-                {footerFirst.map((item, index) => (
-                  <td key={index + 'footer'} className={styles.toggle}>
+                {footerFirst.map((item) => (
+                  <td
+                    onClick={() => clickHandler(item.id)}
+                    key={item.id}
+                    className={`${styles.toggle} ${
+                      dropdown === item.id ? styles.toggleActive : ''
+                    }`}
+                  >
                     <p className={styles.heading}>{item.name}</p>
-                    <ul>
+                    <ul
+                      className={
+                        dropdown === item.id ? '' : styles.hiddenDropdown
+                      }
+                    >
                       {item.links.map((link) => (
                         <li key={link.id}>
                           <a href={link.url}>{link.label}</a>
@@ -323,10 +350,20 @@ export default function Footer() {
               </tr>
               {/* Second part */}
               <tr>
-                {footerSecond.map((item, index) => (
-                  <td key={index + 'footer'} className={styles.toggle}>
+                {footerSecond.map((item) => (
+                  <td
+                    onClick={() => clickHandler(item.id)}
+                    key={item.id}
+                    className={`${styles.toggle} ${
+                      dropdown === item.id ? styles.toggleActive : ''
+                    }`}
+                  >
                     <p className={styles.heading}>{item.name}</p>
-                    <ul>
+                    <ul
+                      className={
+                        dropdown === item.id ? '' : styles.hiddenDropdown
+                      }
+                    >
                       {item.links.map((link) => (
                         <li key={link.id}>
                           <a href={link.url}>{link.label}</a>
